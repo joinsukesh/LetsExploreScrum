@@ -1,8 +1,17 @@
 p {
     font-family: 'Segoe UI' !important;
 }
+.lead{
+    font-size: 1rem !important;
+}
 .bg-body {
     background-color: #f1f1f1 !important;
+}
+.bg-skyblue{
+    background-color: skyblue;
+}
+.main-container{
+    box-shadow: -2px 0px 10px -4px black;
 }
 .main-card {
     border: 0;
@@ -14,5 +23,14 @@ p {
         font-family: "Unica One", sans-serif;
         font-weight: 400;
         font-style: normal;
-        /* text-shadow: 1px 2px 2px black; */
-      }
+        font-weight: bold;
+        font-size:55px;
+        color:darkslategray;
+        text-shadow: 1px 2px 2px black;
+}
+.heading{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color:#212121;
+}
