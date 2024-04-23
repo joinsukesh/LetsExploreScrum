@@ -1,11 +1,50 @@
 p {
     font-family: 'Segoe UI' !important;
 }
+ul{
+    list-style-type: square;
+}
 .lead{
     font-size: 1rem !important;
 }
 .bg-body {
     background-color: #f1f1f1 !important;
+}
+.bg-darkkhaki{
+    background-color: darkkhaki;
+}
+.bg-darksalmon{
+    background-color: darksalmon;
+}
+.bg-darkseagreen{
+    background-color:darkseagreen;
+}
+.bg-darkturquoise{
+    background-color: darkturquoise;
+}
+.bg-indianred{
+    background-color: indianred;
+}
+.bg-lightgreen{
+    background-color: lightgreen;
+}
+.bg-lightpink{
+    background-color: lightpink;
+}
+.bg-lightsalmon{
+    background-color: lightsalmon;
+}
+.bg-lightseagreen{
+    background-color: lightseagreen;
+}
+.bg-lightsteelblue{
+    background-color: lightsteelblue;
+}
+.bg-mediumaquamarine{
+    background-color: mediumaquamarine;
+}
+.bg-mediumseagreen{
+    background-color: mediumseagreen;
 }
 .bg-skyblue{
     background-color: skyblue;
