@@ -1,0 +1,459 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bahiana&family=Bungee+Shade&family=Unica+One&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../assets/app.css" rel="stylesheet" />
+    <title>Measuring Progress | Let's Explore Scrum</title>
+  </head>
+  <body class="bg-body">
+    <main class="container main-container my-5 p-4 bg-tan">
+      <div class="row">
+        <div class="col">
+          <h1 class="title text-center">MEASURING PROGRESS</h1>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <p>
+            In order to deliver functioning product increments on a regular
+            basis, Scrum requires that teams track and manage progress
+            throughout the project. Various practices exist to forecast
+            progress, like burndowns, burnups, or cumulative flows. While
+            proving useful, these do not replace the importance of empiricism.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <h3 class="heading">BURNDOWN CHART</h3>
+          <p>
+            A burndown chart is a visual depiction of the remaining work within
+            a Sprint, plotted over time. It offers a clear indication of the
+            team's progress and highlights any deviations from the planned
+            schedule. As tasks are completed, the chart gradually diminishes to
+            zero by the end of the designated time frame.
+            <br />While not mandated by Scrum, burndown charts serve as valuable
+            tools for monitoring progress and ensuring transparency.
+          </p>
+          <p>
+            The idea behind the burndown chart is to gradually reduce the
+            remaining work, starting from the top and progressing downwards
+            until the goal is achieved. Typically, this goal involves delivering
+            the Product or Sprint Backlog. Thus, the initial workload is
+            represented by the total points assigned to the Product or Sprint
+            Backlog.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <h4>How to create a Sprint burndown chart</h4>
+          <div class="mt-3">
+            <img
+              src="../img/burndown.png"
+              alt="Burndown chart"
+              class="img-fluid img-thumbnail"
+              style="width: 100%; height: 400px"
+            />
+          </div>
+          <div class="mt-3">
+            <p>
+              The Y-axis is for effort, generally measured in story points
+              (SPs). The X-axis is for time, generally measured in days, hours,
+              Sprints.
+              <br />The Scrum Team could use any other units here, whatever they
+              find useful.
+            </p>
+
+            <p>
+              The ideal effort (blue line) represents what the burndown chart
+              will look like if the estimated work is completed on time.
+              <br />Initially, the total estimated work is represented at the
+              top of the Y-axis, serving as the starting point. <br />
+              For example, if the team estimates that they will complete 20 SPs,
+              the number 20 is plotted at the top of the Y-axis. A finishing
+              point is marked on the X-axis, representing the point where all
+              work is estimated to be completed. A straight diagonal line from
+              the starting point to the finishing point represents the expected
+              “burndown” slope if the work is completed on time.
+            </p>
+            <p>
+              Each day, the team updates and plots the progress against the work
+              remaining. These updates represent the remaining effort (yellow
+              line) compared to the ideal effort.
+            </p>
+            <p>
+              For example, if the Sprint Backlog initially comprises 20 SPs, 20
+              is plotted at X=0 and Y=20, indicating the starting workload. If,
+              after the first day, 19 points remain, another point is marked at
+              X=1 and Y=19.
+            </p>
+            <p>
+              Ideally, the remaining effort would line up with the ideal effort.
+              In reality, some work will be marked below the ideal effort line
+              (indicating that the team is ahead of schedule), and other work
+              will be marked above the line (indicating that the team is behind
+              schedule).
+            </p>
+
+            <p>
+              By comparing the estimated and actual work lines, the team
+              assesses whether the project is on track or behind schedule.
+            </p>
+
+            <p>
+              For a Product burndown chart, the amount of work remaining in the
+              Product Backlog over time, is represented on the Y-axis by the
+              number of Product Backlog Items, and the Sprints on the X-axis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col">
+          <h4>Advantages of using a burndown chart</h4>
+          <ul style="list-style: none">
+            <li class="bi bi-bag-check-fill">
+              Provides a clear visual representation, aiding in better
+              comprehension and retention of information.
+            </li>
+            <li class="bi bi-bag-check-fill">
+              Enhances transparency within the team, as the chart's visibility
+              prompts regular performance evaluations and updates to work
+              estimates.
+            </li>
+            <li class="bi bi-bag-check-fill">
+              Mitigates risk by providing daily feedback on schedule, actual
+              work, and estimated work, enabling swift issue identification and
+              adjustment.
+            </li>
+            <li class="bi bi-bag-check-fill">
+              Saves time by offering a faster and more straightforward method of
+              tracking progress compared to sorting through emails and other
+              documents for project status updates.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col">
+          <h4>Disadvantages of using a burndown chart</h4>
+          <ul style="list-style: none">
+            <li class="bi bi-bag-x-fill">
+              Limited ability to convey the entire story, as it is hard to
+              determine whether changes result from adding or subtracting SPs or
+              completing backlog items.
+            </li>
+            <li class="bi bi-bag-x-fill">
+              Its accuracy depends heavily on precise data, making it
+              challenging to interpret deviations from the ideal effort line.
+              For instance, if the actual line falls below or above the expected
+              effort line, it could mean the team is ahead or behind schedule?
+              Or, it could be that the team overestimated or underestimated the
+              work?
+            </li>
+            <li class="bi bi-bag-x-fill">
+              Overestimation of time requirements can lead to inflated
+              expectations.
+            </li>
+            <li class="bi bi-bag-x-fill">
+              The chart fails to reflect how close the team is to completing the
+              work or which backlog items have been finished.
+            </li>
+            <li class="bi bi-bag-x-fill">
+              It poorly represents effort when faced with dynamic changes in the
+              Product Backlog, undermining its effectiveness in reflecting
+              progress accurately.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <h3 class="heading">BURNUP CHART</h3>
+          <p>
+            A burnup chart visually represents a team's progress throughout a
+            project's duration. It provides project managers and teams with a
+            clear overview of workload progression and whether the project is on
+            track for completion.
+            <br />
+            Unlike the downward progression of a burndown chart, the burnup
+            chart moves upward from bottom to top, which explains its name.
+          </p>
+          <p>
+            The chart typically displays two main lines: one representing the
+            total planned project work (blue line) and the other tracking the
+            work completed up to the current point (orange line). By comparing
+            the team's completed work with the overall planned workload, one can
+            gauge their efficiency and make more accurate estimates regarding
+            the remaining work's duration.
+          </p>
+          <p>
+            Burnup charts prioritize showcasing cumulative achievements over
+            time rather than emphasizing specific deadlines.
+          </p>
+          <div>
+            <img
+              src="../img/burnup.png"
+              alt="Burnp chart"
+              class="img-fluid img-thumbnail"
+              style="width: 100%; height: 400px"
+            />
+          </div>
+          <div class="mt-3">
+            <p>
+              The Y-axis represents either the total count of SPs or the
+              workload yet to be finished, while the X-axis denotes the Sprint
+              number or the timeframe.
+              <br />At the top, a blue line indicates the total intended SPs to
+              be achieved by the project's conclusion. <br />A dotted black line
+              marks the projected completion of SPs. <br />
+              The orange line tracks the actual number of SPs completed.
+            </p>
+
+            <p>
+              Here are some important points to consider when analyzing a burnup
+              chart:
+            </p>
+            <ul>
+              <li>
+                Changes in the blue line indicate additions or removals of work
+                from the project.
+              </li>
+              <li>
+                Alterations in the black line signal adjustments to the baseline
+                plan regarding the amount of work planned for each Sprint.
+              </li>
+              <li>
+                If the orange line falls below the black line, it indicates that
+                the project is lagging behind schedule.
+              </li>
+              <li>
+                Conversely, if the orange line surpasses the black line, it
+                suggests that the project is ahead of schedule.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <h4>Advantages of a burnup chart</h4>
+          <ul>
+            <li>
+              Provides a clear and visual representation of the progress made
+              during the Sprint, allowing everyone involved to see how the work
+              is progressing towards the Sprint goal.
+            </li>
+            <li>
+              By comparing the planned work against the actual progress, the
+              burnup chart helps teams identify any deviations or obstacles
+              early in the Sprint. This allows them to take corrective actions
+              promptly, such as reprioritizing tasks or adjusting the Sprint
+              scope.
+            </li>
+            <li>
+              The chart helps teams forecast whether they are on track to
+              complete all planned work by the end of the Sprint. By
+              extrapolating the current velocity, teams can estimate whether
+              they will finish all committed items or if adjustments need to be
+              made to ensure successful Sprint completion.
+            </li>
+            <li>
+              Visualizing progress can be motivating for team members as they
+              see tasks being completed and the Sprint goal getting closer. It
+              also helps them stay focused and encourages them to work
+              collaboratively towards achieving the Sprint goal.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <h3 class="heading">CUMULATIVE FLOW DIAGRAM</h3>
+          <p>
+            A cumulative flow diagram (CFD) is a graphical representation
+            illustrating the progress of various tasks within a project, showing
+            their transition from the initial "to-do" stage to completion.
+            <br />The Y-axis indicates the number of tasks being actively worked
+            on by the team throughout the project, while the X-axis denotes the
+            passage of time.
+          </p>
+          <p>
+            The graph is divided into three color-coded bars namely: To Do
+            tasks, In Progress tasks & Completed tasks.
+          </p>
+          <div>
+            <img
+              src="../img/cfd.png"
+              alt="Burnp chart"
+              class="img-fluid img-thumbnail"
+              style="width: 100%; height: 400px"
+            />
+          </div>
+          <div class="mt-3">
+            <p>
+              This graph depicts three bars within the same visual, each
+              representing the quantity of tasks at different stages. the large
+              graph is always correct since the sum of the number of tasks in
+              the three bars always adds up to the whole.
+            </p>
+
+            <p>
+              As new tasks are added to or created in the project, the "To Do"
+              bar grows.
+              <br />When these tasks are picked by the team, the increase moves
+              to the "In Progress" bar. <br />Finally, when these tasks are
+              completed, the increase moves to the "Completed" bar. <br />This
+              way, at every moment, the team can instantly have a high-level
+              overview of how the project and its constituent tasks are
+              progressing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col">
+          <h4>Advantages of CFD</h4>
+          <p>
+            Cumulative flow diagrams are effective tools for providing a
+            comprehensive overview of a project's progress through various
+            stages. They simplify data into an easy-to-understand format,
+            allowing teams to assess task completion rates and potential
+            bottlenecks. By analyzing the diagram, project managers can identify
+            problem areas in workflow or task execution, enabling them to
+            address bottlenecks and optimize processes for improved efficiency.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <h3 class="heading">SPRINT VELOCITY</h3>
+          <p>
+            To meet our goals and consistently deliver high-quality products
+            within tight timelines, it's crucial to understand the team's
+            capacity to complete tasks within each Sprint. This insight allows
+            us to more accurately predict project completion timelines and
+            ensures that we allocate resources optimally to support the team's
+            efforts.
+          </p>
+          <p>
+            By analyzing the team's historical Sprint performance, we can
+            estimate their future capacity, which is commonly referred to as
+            Sprint velocity in Agile development. With this knowledge, we can
+            effectively plan projects and anticipate the workload for upcoming
+            Sprints.
+            <br />Additionally, it enables us to better forecast resource
+            requirements and project completion efforts. Sharing our Sprint
+            velocity estimate with stakeholders provides them with a clearer
+            understanding of when to expect product delivery.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col">
+          <h4>How to estimate Sprint velocity</h4>
+          <p>
+            Assessing past achievements is crucial for predicting future work
+            completion. To obtain an accurate average of completed tasks, it's
+            advisable to review past Sprints, at least the last three.
+          </p>
+          <p>
+            Estimating Sprint velocity involves averaging the completed work
+            from previous Sprints, measured in SPs. For instance, if Sprint 1,
+            2, and 3 yielded 20, 30, and 40 SPs respectively, the average Sprint
+            velocity would be (20 + 30 + 40)/3, equating to 30 SPs.
+          </p>
+          <p>
+            It's vital to only include SPs from "Done" work, i.e., stories
+            meeting the Definition of Done criteria.
+          </p>
+          <p>
+            This average Sprint velocity of 30 SPs can then guide future Sprint
+            planning. For instance, if there are 150 SPs remaining in the
+            project, it suggests the team may need around five more Sprints to
+            complete the project.
+          </p>
+          <p>
+            However, this estimation is contingent on factors like team size,
+            project complexity, and scope remaining consistent. Teams typically
+            encounter fluctuations from one Sprint to another. Nevertheless,
+            Sprint velocity estimation serves as a useful starting point for
+            gauging the team's capacity.
+          </p>
+          <p>
+            For Agile teams new to the process, lacking past Sprint data,
+            completing a few initial Sprints while tracking completed SPs is
+            necessary. This data accumulation enables the calculation of an
+            average Sprint velocity.
+          </p>
+          <p>
+            It's essential to remember that Sprint velocity is an estimation and
+            shouldn't be solely relied upon to predict what the team will
+            deliver. Actual completed SPs may deviate from the estimated figure.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col">
+          <p>
+            <span class="lead">References:</span>
+            <br />
+            <small
+              ><a
+                href="https://www.lucidchart.com/blog/how-to-create-a-scrum-burndown-chart"
+                target="_blank"
+                class="link-secondary"
+                >Burndown Chart</a
+              ></small
+            >
+            <br />
+            <small
+              ><a
+                href="https://www.wrike.com/blog/what-is-a-burn-up-chart/"
+                target="_blank"
+                class="link-secondary"
+                >Burnup Chart</a
+              ></small
+            >
+            <br />
+            <small
+              ><a
+                href="https://www.lucidchart.com/blog/how-to-estimate-sprint-velocity"
+                target="_blank"
+                class="link-secondary"
+                >Sprint Velocity</a
+              ></small
+            >
+            <br />
+            <small
+              ><a
+                href="https://kissflow.com/project/agile/guide-to-cumulative-flow-diagram/"
+                target="_blank"
+                class="link-secondary"
+                >Cumulative Flow Diagram</a
+              ></small
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

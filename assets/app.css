@@ -55,6 +55,12 @@ ul{
 .bg-skyblue{
     background-color: skyblue;
 }
+.bg-tan{
+    background-color: tan;
+}
+.bg-yellowgreen{
+    background-color: yellowgreen;
+}
 .main-container{
     box-shadow: -2px 0px 10px -4px black;
 }
